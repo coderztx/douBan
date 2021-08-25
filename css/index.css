@@ -1,0 +1,726 @@
+@import "./reset.css";
+@import "./common.css";
+@import "https://at.alicdn.com/t/font_1617821_j45nob7adp.css";
+
+body{
+    font-size: 12px;
+    line-height: 1.5;
+    min-width: 1200px;
+    font-family: Helvetica, Arial, sans-serif;;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+::placeholder{
+    color: #ccc;
+}
+/* 顶部logo区域 */
+.top-area{
+    padding: 5px 14px;
+    background-color: #EDF4EC;
+    overflow: hidden;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.top-area .logo img{
+    width: 102px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.top-area .logo h1{
+    margin-top: -50px;
+}
+
+/* 导航栏区域  */
+.header{
+    background: #fff;
+    height: 90px;
+    padding: 25px 0 ;
+    box-sizing: border-box;
+}
+
+.header .nav{
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.header .nav .left{
+    float: left;
+}
+
+.header .nav .left .name{
+    float: left;
+}
+
+.header .nav img{
+    width: 73px;
+    height: 24px;
+    margin-right: 30px;
+}
+
+.header .nav .left .search{
+    position: relative;
+    width: 270px;
+    height: 30px;
+    color: #ccc;
+    float: left;
+}
+
+.header .nav .left .search input[type='text']{
+    border: 1px solid #ccc;
+    width: 270px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 3px;
+}
+
+.header .nav .left .search .icon-sousuo{
+    font-weight: bold;
+    font-size: 13px;
+    position: absolute;
+    top: 8px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.header .nav .right{
+    float: right;
+    width: 530px;
+    height: 30px;
+    overflow: hidden;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-right: 65px;
+}
+
+.header .nav .right li{
+    float: left;
+    margin-right: 12px;
+    width: 45px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.header .nav .right li a{
+    display: none;
+}
+
+.header .nav .right .book,
+.header .nav .right .movie,
+.header .nav .right .music,
+.header .nav .right .location,
+.header .nav .right .group,
+.header .nav .right .fm,
+.header .nav .right .market{
+    background: url('../img/anony_nav_logo.png') no-repeat;
+}
+
+.header .nav .right .read{
+    background: url('../img/ic_read_home_nav.png') no-repeat;
+
+}
+.header .nav .right .time{
+    background: url('../img/ic_shijian_home_nav.png') no-repeat;
+}
+
+.header .nav .right .movie{
+    background-position-x: -59px;
+}
+
+.header .nav .right .music{
+    background-position-x: -119px;
+}
+
+.header .nav .right .location{
+    background-position-x: -299px;
+
+}
+
+.header .nav .right .group{
+    background-position-x: -179px;
+}
+
+.header .nav .right .fm{
+    background-position-x: -242px;
+
+}
+
+.header .nav .right .market{
+    background-position-x: -422px;
+}
+
+/* banner区域 */
+
+.banner{
+    height: 300px;
+    background: #edf4ed;
+}
+
+.banner .content{
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner .content .left{
+    margin-left: -180px;
+    float: left;
+}
+
+.banner .content .left img{
+    width: 650px;
+    height: 300px;
+   
+}
+
+.banner .content .right{
+    float: right;
+    width: 300px;
+    position: absolute;
+    right: 60px;
+}
+
+.banner .content .right .form{
+    width: 300px;
+    height: 290px;
+    margin-top: 7px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.banner .content .right .form .code-login .qr,
+.banner .content .right .form .code-login .msg{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.banner .content .right .form .code-login .qr{
+    /* 隐藏小的二维码登陆按钮 */
+    /* display: none; */
+}
+
+.banner .content .right .form .code-login .box{
+    display: none;
+    /* 隐藏二维码登陆界面 */
+}
+
+.banner .content .right .form .code-login .box p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.banner .content .right .form .code-login .box .big{
+    width: 170px;
+    height: 170px;
+    margin-top: 25px;
+    margin-left: 60px;
+}
+
+.banner .content .right .form .code-login .box .tip{
+    padding: 2px 0;
+    width: 175px;
+    margin-left: 59px;
+    margin-top: 7px;
+    background: rgba(0, 0, 0, .08);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* 隐藏常规登陆区域 */
+.banner .content .right .form .login-method{
+    /* display: none; */
+}
+
+
+.banner .content .right .form .login-method .msg,
+.banner .content .right .form .login-method .pwd{
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+
+.banner .content .right .form .login-method .msg-login .msg{
+    border-bottom: 1px solid #494949;
+}
+
+.banner .content .right .form .login-method .msg-login .pwd{
+    border-bottom: 1px solid #ddd;
+    color: #9b9b9b;
+}
+
+.banner .content .right .form .login-method .msg-login .agreement{
+    font-size: 12px;
+    padding: 15px 0;
+    color: #9b9b9b;
+}
+
+.banner .content .right .form .login-method .msg-login .agreement a{
+    color: #41ac52;
+}
+
+.banner .content .right .form .login-method .msg-login .form-item{
+    border: 1px solid rgb(228, 230, 229);
+    background: #fff;
+    padding: 5px 10px;
+    height: 35px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.banner .content .right .form .login-method .msg-login .form-item .quhao{
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.banner .content .right .form .login-method .msg-login .form-item .quhao .jia{
+    vertical-align: 2px;
+}
+
+
+.banner .content .right .form .login-method .msg-login .area-box{
+    background-color: rgba(255, 255, 255, .6);
+    width: 309px;
+    height: 303px;
+    position: absolute;
+    top: -8px;
+    left: -3px;
+    /* 隐藏区号选择区域 */
+    display: none;
+}
+
+.banner .content .right .form .login-method .msg-login .area-box .content{
+    width: 300px;
+    height: 233px;
+    margin: 0 auto;
+    margin-top: 26px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.banner .content .right .form .login-method .msg-login .area-box .content .top{
+    color: #060;
+    font-size: 16px;
+    font-weight: bold;
+    background-color:#ebf5eb;
+    padding: 10px;
+}
+
+.banner .content .right .form .login-method .msg-login .area-box .content .top .close{
+    float: right;
+    cursor: pointer;
+}
+
+.banner .content .right .form .login-method .msg-login .area-box .content .down{
+    height: 170px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    overflow-y: scroll;
+}
+
+.banner .content .right .form .login-method .msg-login .area-box .content .down li{
+    border-bottom: 1px solid #e5e5e5;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+.banner .content .right .form .login-method .msg-login .area-box .content .down li .number{
+    float: right;
+} 
+
+.banner .content .right .form .login-method .msg-login .area-box .content .down li.selected{
+    color: #42bd56;
+}
+
+.banner .content .right .form .login-method .msg-login .area-box .content .down li.selected::after{
+    content: '✓';
+    margin-left: 15px;
+}
+
+
+.banner .content .right .form .login-method .msg-login .form-item .tel input[type='text']{
+    width: 245px;
+    height: 18px;
+    border-left: 1px solid rgb(228, 230, 229);
+    position: absolute;
+    top: 7px;
+    right: 0;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    
+}
+
+.banner .content .right .form .login-method .msg-login .form-item .verifiction-code input[type='text'] {
+    width: 180px;
+    height: 18px;
+}
+
+.banner .content .right .form .login-method .msg-login .form-item .verifiction-code .text{
+    color: #41ac52;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+.banner .content .right .form .login-method .msg-login .login-button{
+    color: #fff;
+    background: #41ac52;
+    width: 300px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: -5px;
+}
+
+.banner .content .right .form .login-method .msg-login .login-button:disabled{
+    background: rgba(66,189,86,.5);
+}
+
+.banner .content .right .form .login-method .msg-login .no-code{
+    color: #41ac52;
+    padding: 10px 0;
+}
+
+.banner .content .right .form .login-method .msg-login .no-code a{
+    float: right;
+}
+
+.banner .content .right .form .login-method  .other-login{
+    color: #9b9b9b;
+    border-top: 1px solid #ddd;
+    padding-top: 5px;
+}
+
+.banner .content .right .form .login-method .other-login span{
+    vertical-align: 5px;
+}
+
+.banner .content .right .form .login-method  .other-login .icon-weixin1{
+    color: #50b674;
+    font-size: 22px;
+}
+
+.banner .content .right .form .login-method  .other-login .icon-weibo{
+    color: #ea5d5c ;
+    font-size: 22px;
+}
+
+.banner .content .right .form .login-method  .other-login .iconfont{
+    margin-left: 15px;
+}
+
+
+.banner .content .middle{
+    position: absolute;
+    top: 90px;
+    left: 435px;
+}
+
+.banner .content .middle .douban70{
+    font-size: 25px;
+}
+
+.banner .content .middle .download{
+    width: 160px;
+}
+
+.banner .content .middle .download button{
+    margin-top: 20px;
+    background: #00B51D;
+    color: #fff;
+    padding: 7px 21px;
+    border-radius: 2px;
+    cursor: pointer;
+    width: 118px;
+    height: 30px;
+    font-size: 12px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.banner .content .middle .download .qr-code{
+    float: left;
+    position: relative;
+}
+
+.banner .content .middle .download .qr-code .small-qr{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #48aa0d;
+    box-sizing: border-box;
+    border-radius: 2px;
+    vertical-align: -36px;
+    margin-left: 5px;
+}
+
+.banner .content .middle .download .qr-code .small-qr:hover+.box{
+    display: block;
+}
+
+.banner .content .middle .download .qr-code .box{ 
+    width: 200px;
+    height: 210px;
+    background: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    top: 18px;
+    left: 5px;
+    display: none;
+}
+
+.banner .content .middle .download .qr-code .box .big-qr{
+    width: 160px;
+    height: 160px;
+    margin-bottom: 5px;
+}
+
+/* 内容区域 */
+.container .box:nth-child(2n){
+    width: 100%;
+    background: #f7f7f7;
+}
+
+.container .box:nth-child(2n+1){
+    width: 100%;
+    background: #fff;
+}
+
+.container .two-col{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.container a:hover{
+    color: #fff;
+    background: #37a;
+}
+
+.container .two-col .left{
+    float: left;
+    width: 650px;
+    position: relative;
+}
+
+.container .two-col .right{
+    float: right;
+    width: 260px;
+    
+}
+
+.container .two-col h2{
+    color: #072;
+    font-weight: 400;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.container .two-col h2::after{
+    content: '. . . . . .';
+    vertical-align: 3px;
+    margin-left: 5px;
+    color: #072;
+}
+
+.container .two-col .more{
+    color: #37a;
+}
+
+
+.container .imgs-area .img a:hover{
+    background: none;
+}
+
+.container .two-col .left .imgs-area{
+    width: 400px;
+}
+
+.container .two-col .left .imgs-area .imgs-item{
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.container .two-col .left .imgs-area .imgs-item img{
+    width: 170px;
+    height: 170px;
+}
+
+.container .two-col .left .imgs-area .imgs-item .text{
+    margin-top: -5px;
+}
+
+.container .two-col .left .imgs-area .imgs-item .text a{
+    color: #37a;
+    
+}
+
+.container .two-col .left .imgs-area .imgs-item .text a:hover{
+    color: #fff;
+    background: #37a;
+}
+
+.container .two-col .left .imgs-area .imgs-item .text span{
+    color: #999;
+}
+
+
+.container .two-col .left .text-area{
+    width: 300px;
+    position: absolute;
+    left: 375px;
+    top: 35px;
+}
+
+.container .two-col .left .text-area li{
+    margin-bottom: 13px;
+}
+
+.container .two-col .left .text-area li a{
+    color: #37a;
+}
+
+.container .two-col .left .text-area li a:hover{
+    color: #fff;
+    background: #37a;
+}
+
+.container .two-col .left .text-area .zuozhe{
+    color: #999;
+}
+
+.container .two-col .right li{
+    margin-top: 7px;
+}
+
+.container .two-col .right li div{
+    margin-top: 5px;
+    color: #999;
+}
+
+.container .two-col .right li a{
+    color: #37a;
+    font-size: 14px;
+}
+
+.container .two-col .right li a:hover{
+    color: #fff;
+    background: #37a;
+}
+
+.container .time .left{
+    font-size: 24px;
+    float: left;
+    width: 120px;
+}
+
+.container .time .right{
+    float: right;
+    width: 850px;
+    margin-top: 5px;
+}
+
+.container .time .right .text{
+    float: left;
+}
+.container .time .right .imgs{
+    margin-top: 50px;
+}
+
+.container .time .right .imgs .imgs-item{
+    float: left;
+    margin-right: 55px;
+    margin-bottom: 30px;
+    width: 100px;
+}
+
+
+.container .time .right .imgs .imgs-item img{
+    width: 100px;
+    height: 140px;
+}
+
+
+.container .time .right .imgs .imgs-item .title{
+    text-align: center;
+    margin-top: 7px;
+}
+
+.container .time .right .imgs .imgs-item .sort{
+    text-align: center;
+    margin-top: 7px;
+    color: #999999;
+}
+
+.container .time .right .imgs .imgs-item .href:hover{
+    background: none;
+}
+
+.footer{
+    width: 960px;
+    margin: 0 auto;
+    border-top: 1px dashed #dcdcdc;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.footer a{
+    color: #37a;
+}
+
+.footer a:hover{
+    color: #fff;
+    background: #37a;
+}
+
+.footer .left{
+    float: left;
+}
+
+.footer .jubao img{
+    width: 15px;
+    height: 12px;
+}
+
+.footer .tousu img{
+    width: 109px;
+    height: 16px;
+    vertical-align: -3px;
+}
+
+.footer .gray{
+    color: #999;
+}
+
+.footer .right{
+    float: right;
+    width: 440px;
+}
+
+.footer .right li{
+    float: right;
+    margin-left: 10px;
+}
